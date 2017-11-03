@@ -1,0 +1,46 @@
+ensambles_con_promedios_2
+ensambles_con_promedios_3
+ensambles_con_promedios_4
+KNN_standard_scaler_resultados
+knn_standard_scaler_2
+lightgb_resultados # por ahora tiene aprox 60% de precision pero voy a recalcular con mas estimadores a ver si mejora mas
+cross_descomposition_latlon (ultimo es malo)
+XGBoost_latlon
+gradient_boosting_latlon
+
+-bagging_regressor_gridsearch
+-random_forest_grid_search
+-knn_gridsearch
+-gradient_boosting_gridsearch
+-ada_boost_gredsearch
+-Lightgbm_gridsearch (Probablemente sea malo)
+
+-decision_tree_cross_validation
+-random_forest_cross_validation
+-knn_cross_validation
+-gradient_boosting_cross_validation
+-ada_boost_cross_validation
+
+Decision_tree_gridsearch_mas_columnas_menos_datos
+Decision_tree_gridsearch_mas_columnas
+
+________________________________________________________________________________________________
+MEJORES RESULTADOS:      (light gbm tiene buenos resultados con lat lon, habria que probar grid search con mas estimadores)
+
+
+Decision_tree_Cross_Validation.csv
+lightgbm_latlon_resultados.csv
+Extra_trees_2.csv
+Decision_tree_Cross_Validation_fechas.csv
+Decision_tree_Cross_Validation_menos_datos.csv
+Decision_tree_GridSearch_menosDatos.csv
+Bagging_Regresor_resultados.csv
+Lightgbm_Cross_Validation.csv
+Decision_tree_Cross_Validation_menos_datos.csv
+Extra_trees_GridSearch.csv
+Decision_tree_Cross_Validation_mas_columnas_menos_datos.csv
+Decision_tree_GridSearch_fechas.csv
+Ensamble_con_Promedios.csv
+Decision_tree_Cross_Validation_menos_datos.csv
+Ensamble_con_Promedios_3.csv
+Decision_tree_Cross_Validation.csv
