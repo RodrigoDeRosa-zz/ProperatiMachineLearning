@@ -1,0 +1,17 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Resumen}{1}{section.1}
+\contentsline {section}{\numberline {2}Adaptaci\IeC {\'o}n de los datos}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Rango coherente de variaci\IeC {\'o}n de precio por metro cuadrado}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Divisi\IeC {\'o}n por grupos acorde al precio por metro cuadrado}{1}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}La propiedades con mayores precios dentro de capital se ubican cerca de paradas del subterr\IeC {\'a}neo}{1}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}La cantidad de locales gastron\IeC {\'o}micos y escuelas dan resultados similares sobre los centros mas importantes}{1}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}La ubicaci\IeC {\'o}n en general influye en el precio}{1}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Conclusiones}{1}{subsection.2.6}
+\contentsline {section}{\numberline {3}Estimaci\IeC {\'o}n de las superficies faltantes en el set de prueba}{1}{section.3}
+\contentsline {subsection}{\numberline {3.1}Conclusiones}{2}{subsection.3.1}
+\contentsline {section}{\numberline {4}Algoritmos de predicci\IeC {\'o}n}{2}{section.4}
+\contentsline {subsection}{\numberline {4.1}Random Forest Regressor}{2}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Gradient Boost Regressor}{2}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}AGREGAR MAS ALGORITMOS}{2}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Conclusiones}{2}{subsection.4.4}
+\contentsline {section}{\numberline {5}Conclusiones Generales y Recomendaciones}{2}{section.5}
