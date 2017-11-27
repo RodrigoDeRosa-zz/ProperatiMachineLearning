@@ -134,9 +134,43 @@
 			\tab Cabe destacar que se realizaron pruebas tanto con la librería \emph{sklearn} como con la librería \emph{XGBoost} para comparar
 			resultados y tratar de obtener el mejor posible. Los mejores resultados se obtuvieron con la primera.
 		\subsection{Ada Boost}
+		Al igual que los algoritmos anteriores, el uso de este algoritmo surge de la investigación. Aquí, como se realizo anteriormente, se comenzó utilizando varios features resultantes del análisis del TP1 pero finalmente los mejores resultados se obtuvieron con 'place value', 'superficie' y 'tipo de propiedad'.\\
+		\tab Luego de realizados los Greed Search, se obtuvieron los siguientes hiper parámetros:
+		
+			\begin{itemize}
+				\item \emph{criterion = mse}
+				\item \emph{min$\_$samples$\_$leaf = 3}
+				\item \emph{min$\_$samples$\_$split = 8} 
+			\end{itemize}
+		\tab De todas formas, el algoritmo no dio muy buenos resultados.
+		
 		\subsection{Extra Regressor}
+		Este algoritmo, como los mencionados anteriormente, se decidió utilizar ya que es un ensamble. Como con los algoritmos anteriores, se comenzo con varios features pero finalmente solo se utilizo 'place value', 'superficie' y 'tipo de propiedad'.
+		Luego de hacer los Greed Search, se obtuvieron los siguientes hiper-parámetros:
+		\begin{itemize}
+		
+		\item \emph{n estimators=100}
+			
+		\item \emph{max leaf nodes = 0}
+
+		\item \emph{min samples leaf=1}
+		
+		\item \emph{min samples split=2}
+		
+		\item \emph{bootstrap=True}
+	
+		\end{itemize}				
+
 		\subsection{KNN}
+		
+		KNN es uno de los algoritmos de Machine Learning dados por la cátedra, y además uno de los mas conocidos.
+		Luego de realizar varios Greed Search se obtuvieron distintos hiper parámetros. Estos fueron muy variantes de acuerdo a que columnas del set de datos se incluían para realizar la predicción. \\
+
+		\tab Pero por si solo, de este algoritmo no obtuvimos buenos resultados.
+
 		\subsection{Ensambles}		
+		
+		A medida que se iban obteniendo buenos resultados, se decidió probar con ensambles de algoritmos que entregaban dichos resultados. Mayormente para los ensambles se uso, Gradient Boosting y Random Forest. Lo que se hizo fue para los distintos hiper parámetros para los cuales se obtenían buenos resultados, se calculaba el error y luego se realizaba el promedio de la salida de los 2 algoritmos, ponderando hacia el algoritmo que mejor resultado entregaba. 
 		
 		\subsection{Conclusiones}
 			El mejor resultado se obtuvo con Gradient Boost Regressor llegando a dar los dentro del mismo orden que los mejores resultados de la competencia.
