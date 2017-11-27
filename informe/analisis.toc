@@ -17,4 +17,4 @@
 \contentsline {subsection}{\numberline {4.5}KNN}{3}{subsection.4.5}
 \contentsline {subsection}{\numberline {4.6}Ensambles}{3}{subsection.4.6}
 \contentsline {subsection}{\numberline {4.7}Conclusiones}{3}{subsection.4.7}
-\contentsline {section}{\numberline {5}Conclusiones Generales y Recomendaciones}{3}{section.5}
+\contentsline {section}{\numberline {5}Conclusiones Generales}{3}{section.5}

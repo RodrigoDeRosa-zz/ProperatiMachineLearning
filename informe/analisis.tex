@@ -146,7 +146,7 @@
 		
 		\subsection{Extra Regressor}
 		Este algoritmo, como los mencionados anteriormente, se decidió utilizar ya que es un ensamble. Como con los algoritmos anteriores, se comenzo con varios features pero finalmente solo se utilizo 'place value', 'superficie' y 'tipo de propiedad'.
-		Luego de hacer los Greed Search, se obtuvieron los siguientes hiper-parámetros:
+		Luego de hacer los Grid Search, se obtuvieron los siguientes hiper-parámetros:
 		\begin{itemize}
 		
 		\item \emph{n estimators=100}
@@ -164,7 +164,7 @@
 		\subsection{KNN}
 		
 		KNN es uno de los algoritmos de Machine Learning dados por la cátedra, y además uno de los mas conocidos.
-		Luego de realizar varios Greed Search se obtuvieron distintos hiper parámetros. Estos fueron muy variantes de acuerdo a que columnas del set de datos se incluían para realizar la predicción. \\
+		Luego de realizar varios Grid Search se obtuvieron distintos hiper parámetros. Estos fueron muy variantes de acuerdo a que columnas del set de datos se incluían para realizar la predicción. \\
 
 		\tab Pero por si solo, de este algoritmo no obtuvimos buenos resultados.
 
@@ -174,10 +174,17 @@
 		
 		\subsection{Conclusiones}
 			El mejor resultado se obtuvo con Gradient Boost Regressor llegando a dar los dentro del mismo orden que los mejores resultados de la competencia.
-			
-		\section{Conclusiones Generales y Recomendaciones}
+
+		\section{Conclusiones Generales}
 		
-			Luego de todo el análisis realizado de acuerdo a los resultados obtenidos concluimos que efectivamente el set de datos a predecir esta repleto de anomalías e inconsistencias. Esto genera que una buena predicción implica una cobertura baja de los datos ya que estimar correctamente cuestiones sin sentido solo se logra mediante azar y generar un overfitting sobre el caso de prueba en cuestión.\\
-			Sobre la empresa Properati, recomendamos aplicar un análisis sobre la forma en que los datos son cargados a su pagina, incluso teniendo en cuenta la posibilidad de prohibir resultados absurdos (como por ejemplo propiedades de 0 metros de superficie). Siendo que se manejan cuestiones sensibles de mucho dinero, la pagina podría ser vulnerable a casos de corrupción donde terceros puedan aprovechar el sistema para realizar acciones ilícitas. Por ultimo queremos resaltar que nos llama fuertemente la atención la cantidad de propiedades vendidas por mes, siendo un numero, según nuestra consideración, exorbitante.	
+			Luego del análisis realizado y de acuerdo a los resultados obtenidos, se concluye que el set de datos proporcionado para las 
+			pruebas esta lleno de datos inconsistentes o sin sentido. Esto provoca que las predicciones en general no sean buenas, dado que
+			tratar de predecir valores a partir de información inconsistente tiene una alta probabilidad de error. \\
+			\tab Por esto, consideramos que sería correcto que el sistema de publicaciones de Properati estuviera un poco más controlado para
+			evitar inconsistencias tales como propiedades con superficie nula o mas pequeñas que una celda de prisión, propiedades cuyo precio
+			total no se corresponde con la multiplicación de su superficie por el precio de su metro cuadrado, propiedades con precio por
+			metro cuadrado muy pequeño o extremadamente alto, etc. que aunque si bien se pueden definir reglas para definir y modificar estos
+			valores erróneos, entorpecen mucho la correcta predicción del valor de una propiedad, pues los algoritmos se basan en estos
+			datos para predecir correctamente.
 			
 \end{document}
