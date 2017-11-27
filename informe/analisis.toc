@@ -7,11 +7,14 @@
 \contentsline {subsection}{\numberline {2.4}La cantidad de locales gastron\IeC {\'o}micos y escuelas dan resultados similares sobre los centros mas importantes}{1}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}La ubicaci\IeC {\'o}n en general influye en el precio}{1}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Conclusiones}{1}{subsection.2.6}
-\contentsline {section}{\numberline {3}Estimaci\IeC {\'o}n de las superficies faltantes en el set de prueba}{1}{section.3}
+\contentsline {section}{\numberline {3}Estimaci\IeC {\'o}n de las superficies faltantes en el set de prueba}{2}{section.3}
 \contentsline {subsection}{\numberline {3.1}Conclusiones}{2}{subsection.3.1}
 \contentsline {section}{\numberline {4}Algoritmos de predicci\IeC {\'o}n}{2}{section.4}
 \contentsline {subsection}{\numberline {4.1}Random Forest Regressor}{2}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Gradient Boost Regressor}{2}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}AGREGAR MAS ALGORITMOS}{2}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Conclusiones}{2}{subsection.4.4}
-\contentsline {section}{\numberline {5}Conclusiones Generales y Recomendaciones}{2}{section.5}
+\contentsline {subsection}{\numberline {4.2}Gradient Boosting}{2}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Ada Boost}{3}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Extra Regressor}{3}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}KNN}{3}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Ensambles}{3}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Conclusiones}{3}{subsection.4.7}
+\contentsline {section}{\numberline {5}Conclusiones Generales y Recomendaciones}{3}{section.5}

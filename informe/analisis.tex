@@ -66,10 +66,16 @@
 		Antes de lanzarse a la predicción, se deben procesar los datos de una manera consistente (mayormente con el análisis de TP1) para así acercarse lo mas posible a una estimación correcta. Las siguientes son las conclusiones mas fuertes que obtuvimos del primer trabajo.
 		
 		\subsection{Rango coherente de variación de precio por metro cuadrado}
-		LLENAR
+		Al igual que en el primer trabajo práctico, se recortaron los datos según su precio por metro cuadrado para de esta manera tratar de
+		quedarnos con datos que tuvieran el mayor 'sentido' posible. Estos recortes se hicieron superior e inferiormente, de la misma manera
+		que en el primer trabajo.
 		
 		\subsection{División por grupos acorde al precio por metro cuadrado}
-		LLENAR
+		A partir del análisis realizado en el primer trabajo práctico, en el que se dividió a los barrios en seis grupos según su precio por
+		metro cuadrado, surgió la idea de codificar a cada barrio a partir de su posición en el ranking de precio por metro cuadrado; es decir,
+		se le asignó un número a cada barrio que depende de su precio por metro cuadrado y la distancia de un barrio al próximo depende de que
+		tanto mayor es su precio. De esta manera, se buscó determinar una distancia unidimensional entre los barrios que no dependa de su
+		ubicación geográfica sino del valor de su suelo.
 			
 		\subsection{La propiedades con mayores precios dentro de capital se ubican cerca de paradas del subterráneo}
 		
@@ -115,10 +121,22 @@
 			
 		\end{itemize}
 		
-		\subsection{Gradient Boost Regressor}
-			LLENAR
-		
-		\subsection{AGREGAR MAS ALGORITMOS}		
+		\subsection{Gradient Boosting}
+			Al igual que con Random Forest, el uso de este algoritmo surge de la investigación; es conocido como 'el algoritmo que nunca anda
+			del todo mal' y aquí no fue una excepción. También al igual que en Random Forest, se comenzó utilizando varios features resultantes
+			del análisis del TP1 pero finalmente los mejores resultados se obtuvieron con 'place value', 'superficie' y 'tipo de propiedad'. \\
+			\tab Luego de realizar algunos Grid Searchs, este algoritmo dio los mejores resultados a partir de los siguientes hiperparámetros:
+			\begin{itemize}
+				\item \emph{n estimators = 5000}
+				\item \emph{learning rate = 0.241}
+				\item \emph{max depth = 5} 
+			\end{itemize}
+			\tab Cabe destacar que se realizaron pruebas tanto con la librería \emph{sklearn} como con la librería \emph{XGBoost} para comparar
+			resultados y tratar de obtener el mejor posible. Los mejores resultados se obtuvieron con la primera.
+		\subsection{Ada Boost}
+		\subsection{Extra Regressor}
+		\subsection{KNN}
+		\subsection{Ensambles}		
 		
 		\subsection{Conclusiones}
 			El mejor resultado se obtuvo con Gradient Boost Regressor llegando a dar los dentro del mismo orden que los mejores resultados de la competencia.
